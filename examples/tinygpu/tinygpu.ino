@@ -19,6 +19,8 @@
 #include <Wire.h>
 #include <TinyGPU.h>
 #include <TinyGPU/Boards/LCDBoards.h>
+// Including the umbrella header first lets the Arduino toolchain find the library.
+#include <TinyFonts.h>
 #include <TinyFonts/Integrations/TinyGPU.h>
 
 // All bundled fonts (Lato, Arial- and Helvetica-compatible). Each one is a
