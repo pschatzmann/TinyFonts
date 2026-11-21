@@ -6,19 +6,19 @@ object with the same name as the file. All use 2 bits per pixel.
 
 | Font | Size | Characters | Kerning | Header | Blob size |
 |---|---|---|---|---|---|
-| `Lato8` | 8 px | ascii, latin1, euro | yes | `src/TinyFonts/Fonts/Lato8.h` | 16 KB |
-| `Lato10` | 10 px | ascii, latin1, euro | yes | `src/TinyFonts/Fonts/Lato10.h` | 34 KB |
-| `Lato12` | 12 px | ascii | yes | `src/TinyFonts/Fonts/Lato12.h` | 11 KB |
-| `Lato16` | 16 px | ascii, latin1, euro | yes | `src/TinyFonts/Fonts/Lato16.h` | 45 KB |
-| `Lato32` | 32 px | ascii | yes | `src/TinyFonts/Fonts/Lato32.h` | 31 KB |
-| `Arial8` | 8 px | ascii, latin1, euro | yes | `src/TinyFonts/Fonts/Arial8.h` | 5 KB |
-| `Arial10` | 10 px | ascii, latin1, euro | yes | `src/TinyFonts/Fonts/Arial10.h` | 6 KB |
-| `Arial16` | 16 px | ascii, latin1, euro | yes | `src/TinyFonts/Fonts/Arial16.h` | 10 KB |
-| `Arial32` | 32 px | ascii, latin1, euro | yes | `src/TinyFonts/Fonts/Arial32.h` | 25 KB |
-| `Helvetica8` | 8 px | ascii, latin1, euro | yes | `src/TinyFonts/Fonts/Helvetica8.h` | 7 KB |
-| `Helvetica10` | 10 px | ascii, latin1, euro | yes | `src/TinyFonts/Fonts/Helvetica10.h` | 8 KB |
-| `Helvetica16` | 16 px | ascii, latin1, euro | yes | `src/TinyFonts/Fonts/Helvetica16.h` | 14 KB |
-| `Helvetica32` | 32 px | ascii, latin1, euro | yes | `src/TinyFonts/Fonts/Helvetica32.h` | 34 KB |
+| `Lato8` | 8 px | ascii, latin1, euro, punctuation | yes | `src/TinyFonts/Fonts/Lato8.h` | 20 KB |
+| `Lato10` | 10 px | ascii, latin1, euro, punctuation | yes | `src/TinyFonts/Fonts/Lato10.h` | 49 KB |
+| `Lato12` | 12 px | ascii, punctuation | yes | `src/TinyFonts/Fonts/Lato12.h` | 21 KB |
+| `Lato16` | 16 px | ascii, latin1, euro, punctuation | yes | `src/TinyFonts/Fonts/Lato16.h` | 63 KB |
+| `Lato32` | 32 px | ascii, punctuation | yes | `src/TinyFonts/Fonts/Lato32.h` | 55 KB |
+| `Arial8` | 8 px | ascii, latin1, euro, punctuation | yes | `src/TinyFonts/Fonts/Arial8.h` | 7 KB |
+| `Arial10` | 10 px | ascii, latin1, euro, punctuation | yes | `src/TinyFonts/Fonts/Arial10.h` | 8 KB |
+| `Arial16` | 16 px | ascii, latin1, euro, punctuation | yes | `src/TinyFonts/Fonts/Arial16.h` | 13 KB |
+| `Arial32` | 32 px | ascii, latin1, euro, punctuation | yes | `src/TinyFonts/Fonts/Arial32.h` | 34 KB |
+| `Helvetica8` | 8 px | ascii, latin1, euro, punctuation | yes | `src/TinyFonts/Fonts/Helvetica8.h` | 8 KB |
+| `Helvetica10` | 10 px | ascii, latin1, euro, punctuation | yes | `src/TinyFonts/Fonts/Helvetica10.h` | 10 KB |
+| `Helvetica16` | 16 px | ascii, latin1, euro, punctuation | yes | `src/TinyFonts/Fonts/Helvetica16.h` | 17 KB |
+| `Helvetica32` | 32 px | ascii, latin1, euro, punctuation | yes | `src/TinyFonts/Fonts/Helvetica32.h` | 39 KB |
 
 ## Licences
 
