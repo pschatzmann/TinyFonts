@@ -1,0 +1,14 @@
+{
+  "name": "TinyFonts",
+  "version": "1.0.0",
+  "description": "Header-only font rendering for Arduino with compact embedded fonts, kerning, word wrap and anti-aliasing.",
+  "keywords": "font, text, display, anti-aliasing, kerning, tft, oled",
+  "authors": [
+    {
+      "name": "Phil Schatzmann"
+    }
+  ],
+  "frameworks": "arduino",
+  "platforms": "*",
+  "license": "Apache-2.0"
+}
