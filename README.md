@@ -1,5 +1,9 @@
 # TinyFonts
 
+[![Arduino Library](https://img.shields.io/badge/Arduino-Library-blue.svg)](https://www.arduino.cc/reference/en/libraries/)
+[![CMake](https://img.shields.io/badge/CMake-Supported-blue.svg)](https://github.com/pschatzmann/TinyFonts/blob/main/CMakeLists.txt)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://github.com/pschatzmann/TinyFonts/blob/main/LICENSE)
+
 Header-only font rendering for Arduino and plain C++. Fonts are converted on
 your development machine into compact byte arrays. The device-side renderer
 needs no heap and no display library.
