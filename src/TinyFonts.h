@@ -5,6 +5,11 @@
 // flash (PROGMEM) or RAM. See README.md for details.
 #pragma once
 
+/**
+ * @namespace tinyfonts
+ * @brief Font rendering: Font, TextRenderer, FontDisplay, UTF-8 and layout helpers.
+ */
+
 #include "TinyFonts/config.h"
 #include "TinyFonts/format.h"
 #include "TinyFonts/utf8.h"

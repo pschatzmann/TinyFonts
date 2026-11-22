@@ -269,13 +269,17 @@ def emit_header(blob, name, source, info):
     lines.append("")
     lines.append("#include <TinyFonts.h>")
     lines.append("")
+    lines.append("namespace tinyfonts {")
+    lines.append("")
     lines.append(f"static const uint8_t {name}_DATA[] PROGMEM = {{")
     for i in range(0, len(blob), 16):
         chunk = ", ".join(f"0x{b:02X}" for b in blob[i:i + 16])
         lines.append(f"  {chunk},")
     lines.append("};")
     lines.append("")
-    lines.append(f"static const tinyfonts::Font {name}({name}_DATA, true);")
+    lines.append(f"static const Font {name}({name}_DATA, true);")
+    lines.append("")
+    lines.append("}  // namespace tinyfonts")
     lines.append("")
     return "\n".join(lines)
 

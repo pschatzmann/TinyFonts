@@ -30,21 +30,22 @@ git clone https://github.com/pschatzmann/TinyFonts.git
 ```
 
 Using git makes updates easy: run `git pull` in the project folder. The font
-converter is a Python tool; see [docs/converter.md](docs/converter.md) for its
+converter is a Python tool; see [Font converter](https://github.com/pschatzmann/TinyFonts/wiki/Font-Converter) for its
 requirements.
 
 ## Documentation
 
-- [Quick start](docs/quickstart.md): from a TTF file to text on screen
-- [Getting started](docs/getting-started.md): the runtime API, measuring, clipping and limits
-- [Font converter](docs/converter.md): options, character sets, sizes and kerning
-- [Available fonts](docs/fonts.md): the generated fonts, sizes and licences
-- [TinyGPU](docs/tinygpu.md): the desktop and ESP32 example and the integration header
-- [CMake](docs/cmake.md): using, installing, testing and the desktop example build
-- [Font format](docs/format.md): the binary layout of a generated font
+- [Class documentation](https://pschatzmann.github.io/TinyFonts/annotated.html): Doxygen API reference for all classes and functions
+- [Quick start](https://github.com/pschatzmann/TinyFonts/wiki/Quick-Start): from a TTF file to text on screen
+- [Getting started](https://github.com/pschatzmann/TinyFonts/wiki/Getting-Started): the runtime API, measuring, clipping and limits
+- [Font converter](https://github.com/pschatzmann/TinyFonts/wiki/Font-Converter): options, character sets, sizes and kerning
+- [Available fonts](https://github.com/pschatzmann/TinyFonts/wiki/Available-Fonts): the generated fonts, sizes and licences
+- [TinyGPU](https://github.com/pschatzmann/TinyFonts/wiki/TinyGPU): the desktop and ESP32 example and the integration header
+- [CMake](https://github.com/pschatzmann/TinyFonts/wiki/CMake): using, installing, testing and the desktop example build
+- [Font format](https://github.com/pschatzmann/TinyFonts/wiki/Font-Format): the binary layout of a generated font
 
 ## License
 
 TinyFonts is licensed under the Apache License 2.0. See [LICENSE](LICENSE).
 
-The generated fonts have their own licences; see [docs/fonts.md](docs/fonts.md).
+The generated fonts have their own licences; see [Available fonts](https://github.com/pschatzmann/TinyFonts/wiki/Available-Fonts).

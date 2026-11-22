@@ -25,7 +25,7 @@ public:
 };
 
 CanvasDisplay display;
-tinyfonts::TextRenderer text(Lato12, display);
+tinyfonts::TextRenderer text(tinyfonts::Lato12, display);
 
 void printCanvas() {
   static const char shades[] = " .:-=+*#%@";

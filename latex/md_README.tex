@@ -1,0 +1,42 @@
+\chapter{Tiny\+Fonts}
+\hypertarget{md_README}{}\label{md_README}\index{TinyFonts@{TinyFonts}}
+\label{md_README_autotoc_md0}%
+\Hypertarget{md_README_autotoc_md0}%
+ \href{https://www.arduino.cc/reference/en/libraries/}{\texttt{ }} \href{https://github.com/pschatzmann/TinyFonts/blob/main/CMakeLists.txt}{\texttt{ }} \href{https://github.com/pschatzmann/TinyFonts/blob/main/LICENSE}{\texttt{ }}
+
+Header-\/only font rendering for Arduino and plain C++. Fonts are converted on your development machine into compact byte arrays. The device-\/side renderer needs no heap and no display library.\hypertarget{md_README_autotoc_md1}{}\doxysection{\texorpdfstring{Features}{Features}}\label{md_README_autotoc_md1}
+
+\begin{DoxyItemize}
+\item Anti-\/aliasing at 1, 2, 4 or 8 bits per pixel
+\item Kerning, proportional advances, word wrap and UTF-\/8 text
+\item Fonts in flash (PROGMEM) or RAM
+\item 13 ready-\/to-\/use fonts in {\ttfamily src/\+Tiny\+Fonts/\+Fonts/} (Lato, Arial-\/ and Helvetica-\/compatible)
+\item Draws through a small {\ttfamily Font\+Display} interface, so any display library works
+\item Optional integration with \href{https://github.com/pschatzmann/TinyGPU}{\texttt{ Tiny\+GPU}}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md2}{}\doxysection{\texorpdfstring{Installation}{Installation}}\label{md_README_autotoc_md2}
+\hypertarget{md_README_autotoc_md3}{}\doxysubsection{\texorpdfstring{Arduino}{Arduino}}\label{md_README_autotoc_md3}
+Download the library as a zip and use {\bfseries{Sketch → Include Library → Add .ZIP Library}}. Or clone the project into your Arduino libraries folder\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd\ \string~/Documents/Arduino/libraries}
+\DoxyCodeLine{git\ clone\ https://github.com/pschatzmann/TinyFonts.git}
+
+\end{DoxyCode}
+
+
+Using git makes updates easy\+: run {\ttfamily git pull} in the project folder. The font converter is a Python tool; see \href{https://github.com/pschatzmann/TinyFonts/wiki/Font-Converter}{\texttt{ Font converter}} for its requirements.\hypertarget{md_README_autotoc_md4}{}\doxysection{\texorpdfstring{Documentation}{Documentation}}\label{md_README_autotoc_md4}
+
+\begin{DoxyItemize}
+\item \href{https://pschatzmann.github.io/TinyFonts/annotated.html}{\texttt{ Class documentation}}\+: Doxygen API reference for all classes and functions
+\item \href{https://github.com/pschatzmann/TinyFonts/wiki/Quick-Start}{\texttt{ Quick start}}\+: from a TTF file to text on screen
+\item \href{https://github.com/pschatzmann/TinyFonts/wiki/Getting-Started}{\texttt{ Getting started}}\+: the runtime API, measuring, clipping and limits
+\item \href{https://github.com/pschatzmann/TinyFonts/wiki/Font-Converter}{\texttt{ Font converter}}\+: options, character sets, sizes and kerning
+\item \href{https://github.com/pschatzmann/TinyFonts/wiki/Available-Fonts}{\texttt{ Available fonts}}\+: the generated fonts, sizes and licences
+\item \href{https://github.com/pschatzmann/TinyFonts/wiki/TinyGPU}{\texttt{ Tiny\+GPU}}\+: the desktop and ESP32 example and the integration header
+\item \href{https://github.com/pschatzmann/TinyFonts/wiki/CMake}{\texttt{ CMake}}\+: using, installing, testing and the desktop example build
+\item \href{https://github.com/pschatzmann/TinyFonts/wiki/Font-Format}{\texttt{ Font format}}\+: the binary layout of a generated font
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md5}{}\doxysection{\texorpdfstring{License}{License}}\label{md_README_autotoc_md5}
+Tiny\+Fonts is licensed under the Apache License 2.\+0. See \mbox{[}LICENSE\mbox{]}(LICENSE).
+
+The generated fonts have their own licences; see \href{https://github.com/pschatzmann/TinyFonts/wiki/Available-Fonts}{\texttt{ Available fonts}}. 

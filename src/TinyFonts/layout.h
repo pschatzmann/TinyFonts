@@ -9,23 +9,24 @@
 
 namespace tinyfonts {
 
-// Size of a laid-out block of text, in pixels.
+/// @brief Size of a laid-out block of text, in pixels, with its line count.
 struct TextBox {
+  /// Width of the widest line, in pixels.
   int width = 0;
+  /// Total height of all lines, in pixels.
   int height = 0;
+  /// Number of lines.
   int lines = 0;
 };
 
-// Advance of one codepoint (0 when neither it nor the fallback exists).
+/// Advance of one code point in pixels, or 0 if neither it nor the fallback exists.
 inline int advanceOf(const Font& font, uint32_t codepoint) {
   Glyph g;
   return findGlyph(font, codepoint, g) ? g.advance : 0;
 }
 
-// Splits [begin, end) into lines and calls onLine(lineBegin, lineEnd, width)
-// for each one. Lines end at '\n', and at a space or character that would
-// exceed maxWidth (maxWidth <= 0 disables wrapping). Returns the line count.
 // Each call makes progress, so the loop always terminates.
+/// Splits [begin, end) into lines at '\n', at spaces, and before characters that would exceed maxWidth (maxWidth <= 0 disables wrapping). Calls onLine(lineBegin, lineEnd, width) for each line and returns the number of lines.
 template <typename OnLine>
 inline int wrapText(const Font& font, const char* p, const char* end,
                     int maxWidth, OnLine onLine) {
@@ -89,7 +90,7 @@ inline int wrapText(const Font& font, const char* p, const char* end,
   return lines;
 }
 
-// Measures text without drawing it. maxWidth <= 0 means no wrapping.
+/// Measures text without drawing it. maxWidth <= 0 disables wrapping.
 inline TextBox measureText(const Font& font, const char* begin, const char* end,
                            int maxWidth = 0) {
   TextBox box;

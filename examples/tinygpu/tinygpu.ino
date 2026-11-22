@@ -37,12 +37,12 @@ FrameBuffer<RGB565> framebuffer(board.width(), board.height(), FontRGB565);
 
 // One TinyGPU font object per TinyFonts font. setFont() keeps a reference, so
 // these must outlive the framebuffer's use of them (globals do).
-tinyfonts::TinyGPUFont<RGB565> title(Lato32);
-tinyfonts::TinyGPUFont<RGB565> body(Lato16);
-tinyfonts::TinyGPUFont<RGB565> small10(Lato10);
-tinyfonts::TinyGPUFont<RGB565> small8(Lato8);
-tinyfonts::TinyGPUFont<RGB565> arial16(Arial16);
-tinyfonts::TinyGPUFont<RGB565> helvetica16(Helvetica16);
+tinyfonts::TinyGPUFont<RGB565> title(tinyfonts::Lato32);
+tinyfonts::TinyGPUFont<RGB565> body(tinyfonts::Lato16);
+tinyfonts::TinyGPUFont<RGB565> small10(tinyfonts::Lato10);
+tinyfonts::TinyGPUFont<RGB565> small8(tinyfonts::Lato8);
+tinyfonts::TinyGPUFont<RGB565> arial16(tinyfonts::Arial16);
+tinyfonts::TinyGPUFont<RGB565> helvetica16(tinyfonts::Helvetica16);
 
 const char* kHeading = "TinyFonts";
 // UTF-8 text: multi-byte characters (ü, é, ï, €) come from the Lato16 font,

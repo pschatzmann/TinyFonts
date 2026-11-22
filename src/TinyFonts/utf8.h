@@ -6,10 +6,10 @@
 
 namespace tinyfonts {
 
+/// Code point returned for malformed UTF-8 (U+FFFD).
 constexpr uint32_t kReplacementChar = 0xFFFD;
 
-// Decodes one UTF-8 sequence starting at `p` and advances `p` past it.
-// `p` must be less than `end`. Malformed input yields kReplacementChar.
+/// Decodes one UTF-8 sequence at p and advances p past it. Malformed input yields kReplacementChar. p must be less than end.
 inline uint32_t decodeUtf8(const char*& p, const char* end) {
   const unsigned char c = static_cast<unsigned char>(*p++);
   if (c < 0x80) return c;

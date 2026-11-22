@@ -1,11 +1,11 @@
 // TinyFonts - all bundled fonts in one include.
 //
 //   #include <TinyFonts/Fonts/Fonts.h>
-//   tinyfonts::TextRenderer text(Lato16, display);
+//   tinyfonts::TextRenderer text(tinyfonts::Lato16, display);
 //
 // Each font is a separate `tinyfonts::Font` object named after its header
 // (for example Lato16 or Helvetica32). Include only the fonts you use if
-// flash size matters; see docs/fonts.md for the sizes.
+// flash size matters; see the "Available Fonts" page in the wiki for the sizes.
 #pragma once
 
 #include "Arial8.h"

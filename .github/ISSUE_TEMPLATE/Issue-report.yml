@@ -5,7 +5,7 @@ body:
     attributes:
       value: |
         * Before reporting a new bug please check and search the [list of existing issues](https://github.com/pschatzmann/TinyFonts/issues?q=)
-        * Please check [the Readme](https://github.com/pschatzmann/TinyFonts) and the [documentation in docs/](https://github.com/pschatzmann/TinyFonts/tree/main/docs)
+        * Please check [the Readme](https://github.com/pschatzmann/TinyFonts) and the [wiki](https://github.com/pschatzmann/TinyFonts/wiki)
         * Don't forget to check [the discussions](https://github.com/pschatzmann/TinyFonts/discussions)
         * If still experiencing the issue, please provide as many details as possible below about your hardware, computer setup and code.
   - type: textarea

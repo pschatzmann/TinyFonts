@@ -10,20 +10,31 @@
 
 namespace tinyfonts {
 
-// Output target. Implement drawPixel() for TFT/OLED drivers, Adafruit GFX,
-// LVGL, a framebuffer, or anything else. `coverage` is 0 (transparent) to
-// 255 (fully covered); blend it with the background yourself.
+/**
+ * @brief Output target for TextRenderer.
+ *
+ * Implement drawPixel() to write anti-aliased pixels to a display, framebuffer
+ * or graphics library. The coverage is 0 (no ink) to 255 (full ink); blend it
+ * with the background yourself.
+ */
 class FontDisplay {
 public:
   virtual ~FontDisplay() {}
+  /// Receives one pixel. coverage is 0 (no ink) to 255 (full ink).
   virtual void drawPixel(int x, int y, uint8_t coverage) = 0;
 };
 
-// Wraps any callable taking (int x, int y, uint8_t coverage).
+/**
+ * @brief FontDisplay that forwards drawPixel() to a callable.
+ *
+ * The callable takes (int x, int y, uint8_t coverage). Create it with makeDisplay().
+ */
 template <typename Fn>
 class LambdaDisplay : public FontDisplay {
 public:
+  /// Wraps a callable taking (int x, int y, uint8_t coverage).
   explicit LambdaDisplay(Fn fn) : _fn(fn) {}
+  /// Forwards the pixel to the wrapped callable.
   void drawPixel(int x, int y, uint8_t coverage) override {
     _fn(x, y, coverage);
   }
@@ -32,20 +43,26 @@ private:
   Fn _fn;
 };
 
+/// Creates a LambdaDisplay from a callable.
 template <typename Fn>
 inline LambdaDisplay<Fn> makeDisplay(Fn fn) {
   return LambdaDisplay<Fn>(fn);
 }
 
-// Draws text from a Font onto a FontDisplay. Coordinates are in pixels;
-// (x, y) is the top-left corner of the first line box, and each line's
-// baseline is `ascent` pixels below its top.
+/**
+ * @brief Draws text from a Font onto a FontDisplay.
+ *
+ * Coordinates are in pixels. (x, y) is the top-left corner of the first line box,
+ * and the baseline lies ascent pixels below it. Supports UTF-8, kerning, '\n'
+ * line breaks, word wrap and a clipping rectangle.
+ */
 class TextRenderer {
 public:
+  /// Creates a renderer that draws font onto display. Both must outlive the renderer.
   TextRenderer(const Font& font, FontDisplay& display)
       : _font(font), _display(display) {}
 
-  // Restricts output to [x0, x1) x [y0, y1).
+  /// Restricts drawing to the rectangle [x0, x1) x [y0, y1).
   void setClip(int x0, int y0, int x1, int y1) {
     _clip = true;
     _cx0 = x0;
@@ -53,10 +70,10 @@ public:
     _cx1 = x1;
     _cy1 = y1;
   }
+  /// Removes the clipping rectangle.
   void clearClip() { _clip = false; }
 
-  // Draws a single line (no wrapping, '\n' is not special). Returns the
-  // advance width of the line.
+  /// Draws one line of text: no wrapping, and '\n' ends the line. (x, y) is the top of the line box. Returns the advance width in pixels.
   int drawLine(int x, int y, const char* begin, const char* end) {
     const int baseline = y + _font.ascent();
     int pen = x;
@@ -78,8 +95,7 @@ public:
     return pen - x;
   }
 
-  // Draws text, honouring '\n' and wrapping at maxWidth (<= 0: no wrap).
-  // Returns the size of the drawn block.
+  /// Draws text from begin to end, honouring '\n' and wrapping at maxWidth (maxWidth <= 0 disables wrapping). Returns the size of the drawn block.
   TextBox drawText(int x, int y, const char* begin, const char* end,
                    int maxWidth = 0) {
     const int lineHeight = _font.lineHeight();
@@ -95,7 +111,7 @@ public:
     return box;
   }
 
-  // Convenience overload for a NUL-terminated string.
+  /// Draws a NUL-terminated string. See the range overload for details.
   TextBox drawText(int x, int y, const char* text, int maxWidth = 0) {
     const char* end = text;
     while (*end) ++end;
