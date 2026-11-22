@@ -15,3 +15,10 @@
 #include "TinyFonts/utf8.h"
 #include "TinyFonts/layout.h"
 #include "TinyFonts/render.h"
+
+// Make the tinyfonts namespace visible, so fonts can be used as Lato16 etc.
+// Define TINYFONTS_NO_USING_NAMESPACE before including this header to avoid it
+// (then write tinyfonts::Lato16).
+#ifndef TINYFONTS_NO_USING_NAMESPACE
+using namespace tinyfonts;
+#endif
