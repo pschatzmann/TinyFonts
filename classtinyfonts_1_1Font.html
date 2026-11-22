@@ -81,46 +81,69 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Read-only view of a TinyFonts font blob in RAM or flash.  
+ <a href="classtinyfonts_1_1Font.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="format_8h_source.html">format.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa22873671449c8e8f03e5c6e4e55cac8" id="r_aa22873671449c8e8f03e5c6e4e55cac8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#aa22873671449c8e8f03e5c6e4e55cac8">Font</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a> *<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">data</a>=<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">nullptr</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">bool</a> <a class="el" href="classtinyfonts_1_1Font.html#a06d91c63066b71342dbe8f0c13f987bd">inFlash</a>=<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">false</a>)</td></tr>
+<tr class="memitem:aa22873671449c8e8f03e5c6e4e55cac8" id="r_aa22873671449c8e8f03e5c6e4e55cac8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">constexpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#aa22873671449c8e8f03e5c6e4e55cac8">Font</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a> *<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">data</a>=<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">nullptr</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">bool</a> <a class="el" href="classtinyfonts_1_1Font.html#a06d91c63066b71342dbe8f0c13f987bd">inFlash</a>=<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">false</a>)</td></tr>
+<tr class="memdesc:aa22873671449c8e8f03e5c6e4e55cac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a view of a font blob. Set inFlash for blobs stored in PROGMEM.  <br /></td></tr>
 <tr class="separator:aa22873671449c8e8f03e5c6e4e55cac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac17b2407dd02f39d970ad5df0a385c26" id="r_ac17b2407dd02f39d970ad5df0a385c26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#ac17b2407dd02f39d970ad5df0a385c26">valid</a> () <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:ac17b2407dd02f39d970ad5df0a385c26" id="r_ac17b2407dd02f39d970ad5df0a385c26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#ac17b2407dd02f39d970ad5df0a385c26">valid</a> () <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:ac17b2407dd02f39d970ad5df0a385c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when the blob is non-null and starts with the magic bytes "TNF1".  <br /></td></tr>
 <tr class="separator:ac17b2407dd02f39d970ad5df0a385c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2706204a0f8baaecde1c3537b64c9a0a" id="r_a2706204a0f8baaecde1c3537b64c9a0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a2706204a0f8baaecde1c3537b64c9a0a">bitsPerPixel</a> () <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:a2706204a0f8baaecde1c3537b64c9a0a" id="r_a2706204a0f8baaecde1c3537b64c9a0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a2706204a0f8baaecde1c3537b64c9a0a">bitsPerPixel</a> () <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:a2706204a0f8baaecde1c3537b64c9a0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coverage depth per pixel: 1, 2, 4 or 8.  <br /></td></tr>
 <tr class="separator:a2706204a0f8baaecde1c3537b64c9a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d8ad70eb88a9f781f51d295bfa3c696" id="r_a3d8ad70eb88a9f781f51d295bfa3c696"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a3d8ad70eb88a9f781f51d295bfa3c696">ascent</a> () <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:a3d8ad70eb88a9f781f51d295bfa3c696" id="r_a3d8ad70eb88a9f781f51d295bfa3c696"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a3d8ad70eb88a9f781f51d295bfa3c696">ascent</a> () <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:a3d8ad70eb88a9f781f51d295bfa3c696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixels above the baseline.  <br /></td></tr>
 <tr class="separator:a3d8ad70eb88a9f781f51d295bfa3c696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a386d26f0c3bba272b556902aa8010e49" id="r_a386d26f0c3bba272b556902aa8010e49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a386d26f0c3bba272b556902aa8010e49">descent</a> () <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:a386d26f0c3bba272b556902aa8010e49" id="r_a386d26f0c3bba272b556902aa8010e49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a386d26f0c3bba272b556902aa8010e49">descent</a> () <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:a386d26f0c3bba272b556902aa8010e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pixels below the baseline.  <br /></td></tr>
 <tr class="separator:a386d26f0c3bba272b556902aa8010e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10df7443123764ab5417d9a06f439c66" id="r_a10df7443123764ab5417d9a06f439c66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a10df7443123764ab5417d9a06f439c66">lineGap</a> () <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:a10df7443123764ab5417d9a06f439c66" id="r_a10df7443123764ab5417d9a06f439c66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a10df7443123764ab5417d9a06f439c66">lineGap</a> () <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:a10df7443123764ab5417d9a06f439c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extra pixels between lines.  <br /></td></tr>
 <tr class="separator:a10df7443123764ab5417d9a06f439c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeb2da320d355f2a0544103d88d796f2" id="r_abeb2da320d355f2a0544103d88d796f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#abeb2da320d355f2a0544103d88d796f2">lineHeight</a> () <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:abeb2da320d355f2a0544103d88d796f2" id="r_abeb2da320d355f2a0544103d88d796f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#abeb2da320d355f2a0544103d88d796f2">lineHeight</a> () <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:abeb2da320d355f2a0544103d88d796f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Line height: ascent + descent + line gap.  <br /></td></tr>
 <tr class="separator:abeb2da320d355f2a0544103d88d796f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bea8666ff3f38750f9fc66d6ebfe3ae" id="r_a6bea8666ff3f38750f9fc66d6ebfe3ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a6bea8666ff3f38750f9fc66d6ebfe3ae">glyphCount</a> () <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:a6bea8666ff3f38750f9fc66d6ebfe3ae" id="r_a6bea8666ff3f38750f9fc66d6ebfe3ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a6bea8666ff3f38750f9fc66d6ebfe3ae">glyphCount</a> () <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:a6bea8666ff3f38750f9fc66d6ebfe3ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of glyphs in the glyph table.  <br /></td></tr>
 <tr class="separator:a6bea8666ff3f38750f9fc66d6ebfe3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adebadbcb9542e3eb6a61164116b493a3" id="r_adebadbcb9542e3eb6a61164116b493a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#adebadbcb9542e3eb6a61164116b493a3">kerningCount</a> () <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:adebadbcb9542e3eb6a61164116b493a3" id="r_adebadbcb9542e3eb6a61164116b493a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#adebadbcb9542e3eb6a61164116b493a3">kerningCount</a> () <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:adebadbcb9542e3eb6a61164116b493a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of kerning pairs.  <br /></td></tr>
 <tr class="separator:adebadbcb9542e3eb6a61164116b493a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a998a034589ab78ffe511c061d8c2ee45" id="r_a998a034589ab78ffe511c061d8c2ee45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a998a034589ab78ffe511c061d8c2ee45">fallbackCodepoint</a> () <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:a998a034589ab78ffe511c061d8c2ee45" id="r_a998a034589ab78ffe511c061d8c2ee45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a998a034589ab78ffe511c061d8c2ee45">fallbackCodepoint</a> () <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:a998a034589ab78ffe511c061d8c2ee45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code point drawn for characters the font does not contain.  <br /></td></tr>
 <tr class="separator:a998a034589ab78ffe511c061d8c2ee45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34033d5e30b3da0572c8e6deac1d3f8c" id="r_a34033d5e30b3da0572c8e6deac1d3f8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a34033d5e30b3da0572c8e6deac1d3f8c">bitmapBase</a> () <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:a34033d5e30b3da0572c8e6deac1d3f8c" id="r_a34033d5e30b3da0572c8e6deac1d3f8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a34033d5e30b3da0572c8e6deac1d3f8c">bitmapBase</a> () <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:a34033d5e30b3da0572c8e6deac1d3f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of the bitmap area from the start of the blob.  <br /></td></tr>
 <tr class="separator:a34033d5e30b3da0572c8e6deac1d3f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d91c63066b71342dbe8f0c13f987bd" id="r_a06d91c63066b71342dbe8f0c13f987bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a06d91c63066b71342dbe8f0c13f987bd">inFlash</a> () <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:a06d91c63066b71342dbe8f0c13f987bd" id="r_a06d91c63066b71342dbe8f0c13f987bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a06d91c63066b71342dbe8f0c13f987bd">inFlash</a> () <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:a06d91c63066b71342dbe8f0c13f987bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the blob is stored in flash (PROGMEM).  <br /></td></tr>
 <tr class="separator:a06d91c63066b71342dbe8f0c13f987bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8cfbcdc6a95e5496c6a94ba311b6671" id="r_ac8cfbcdc6a95e5496c6a94ba311b6671"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#ac8cfbcdc6a95e5496c6a94ba311b6671">u8</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">offset</a>) <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:ac8cfbcdc6a95e5496c6a94ba311b6671" id="r_ac8cfbcdc6a95e5496c6a94ba311b6671"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#ac8cfbcdc6a95e5496c6a94ba311b6671">u8</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">offset</a>) <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:ac8cfbcdc6a95e5496c6a94ba311b6671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads one byte at offset, from flash or RAM.  <br /></td></tr>
 <tr class="separator:ac8cfbcdc6a95e5496c6a94ba311b6671"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18b2238633d83e4f34cc4673eff2a738" id="r_a18b2238633d83e4f34cc4673eff2a738"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a18b2238633d83e4f34cc4673eff2a738">u16</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">offset</a>) <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:a18b2238633d83e4f34cc4673eff2a738" id="r_a18b2238633d83e4f34cc4673eff2a738"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a18b2238633d83e4f34cc4673eff2a738">u16</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">offset</a>) <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:a18b2238633d83e4f34cc4673eff2a738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a little-endian 16-bit value at offset.  <br /></td></tr>
 <tr class="separator:a18b2238633d83e4f34cc4673eff2a738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4c8637be867581e359b584888cba953" id="r_aa4c8637be867581e359b584888cba953"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#aa4c8637be867581e359b584888cba953">u32</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">offset</a>) <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:aa4c8637be867581e359b584888cba953" id="r_aa4c8637be867581e359b584888cba953"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#aa4c8637be867581e359b584888cba953">u32</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">offset</a>) <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:aa4c8637be867581e359b584888cba953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a little-endian 32-bit value at offset.  <br /></td></tr>
 <tr class="separator:aa4c8637be867581e359b584888cba953"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ebc3dfb43204373d65fcebea2abaaef" id="r_a1ebc3dfb43204373d65fcebea2abaaef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a1ebc3dfb43204373d65fcebea2abaaef">i8</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">offset</a>) <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:a1ebc3dfb43204373d65fcebea2abaaef" id="r_a1ebc3dfb43204373d65fcebea2abaaef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a1ebc3dfb43204373d65fcebea2abaaef">i8</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">offset</a>) <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:a1ebc3dfb43204373d65fcebea2abaaef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads one signed byte at offset.  <br /></td></tr>
 <tr class="separator:a1ebc3dfb43204373d65fcebea2abaaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a220dfd4ea2516dc469fce8dbb07b82b2" id="r_a220dfd4ea2516dc469fce8dbb07b82b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a220dfd4ea2516dc469fce8dbb07b82b2">i16</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">offset</a>) <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:a220dfd4ea2516dc469fce8dbb07b82b2" id="r_a220dfd4ea2516dc469fce8dbb07b82b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1Font.html#a220dfd4ea2516dc469fce8dbb07b82b2">i16</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">offset</a>) <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:a220dfd4ea2516dc469fce8dbb07b82b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a little-endian signed 16-bit value at offset.  <br /></td></tr>
 <tr class="separator:a220dfd4ea2516dc469fce8dbb07b82b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Read-only view of a TinyFonts font blob in RAM or flash. </p>
+<p>Metrics, glyph lookup and kerning are read directly from the blob, which is never copied. Generate blobs with tools/tinyfonts_convert.py. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa22873671449c8e8f03e5c6e4e55cac8" name="aa22873671449c8e8f03e5c6e4e55cac8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa22873671449c8e8f03e5c6e4e55cac8">&#9670;&#160;</a></span>Font()</h2>
 
@@ -131,16 +154,16 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">constexpr</a> tinyfonts::Font::Font </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">constexpr</a> tinyfonts::Font::Font </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>data</em> = <code><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">nullptr</a></code>, </td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em> = <code><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">nullptr</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">bool</a>&#160;</td>
-          <td class="paramname"><em>inFlash</em> = <code><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">false</a></code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">bool</a>&#160;</td>
+          <td class="paramname"><em>inFlash</em> = <code><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">false</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -155,6 +178,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Creates a view of a font blob. Set inFlash for blobs stored in PROGMEM. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -168,7 +193,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> tinyfonts::Font::ascent </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> tinyfonts::Font::ascent </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -180,6 +205,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Pixels above the baseline. </p>
 
 </div>
 </div>
@@ -193,7 +220,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a> tinyfonts::Font::bitmapBase </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a> tinyfonts::Font::bitmapBase </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -205,6 +232,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Offset of the bitmap area from the start of the blob. </p>
 
 </div>
 </div>
@@ -218,7 +247,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a> tinyfonts::Font::bitsPerPixel </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a> tinyfonts::Font::bitsPerPixel </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -230,6 +259,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Coverage depth per pixel: 1, 2, 4 or 8. </p>
 
 </div>
 </div>
@@ -243,7 +274,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> tinyfonts::Font::descent </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> tinyfonts::Font::descent </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -255,6 +286,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Pixels below the baseline. </p>
 
 </div>
 </div>
@@ -268,7 +301,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint32_t</a> tinyfonts::Font::fallbackCodepoint </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint32_t</a> tinyfonts::Font::fallbackCodepoint </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -280,6 +313,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Code point drawn for characters the font does not contain. </p>
 
 </div>
 </div>
@@ -293,7 +328,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint16_t</a> tinyfonts::Font::glyphCount </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint16_t</a> tinyfonts::Font::glyphCount </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -305,6 +340,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Number of glyphs in the glyph table. </p>
 
 </div>
 </div>
@@ -318,9 +355,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int16_t</a> tinyfonts::Font::i16 </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int16_t</a> tinyfonts::Font::i16 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a>&#160;</td>
           <td class="paramname"><em>offset</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -331,6 +368,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Reads a little-endian signed 16-bit value at offset. </p>
 
 </div>
 </div>
@@ -344,9 +383,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int8_t</a> tinyfonts::Font::i8 </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int8_t</a> tinyfonts::Font::i8 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a>&#160;</td>
           <td class="paramname"><em>offset</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -357,6 +396,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Reads one signed byte at offset. </p>
 
 </div>
 </div>
@@ -370,7 +411,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">bool</a> tinyfonts::Font::inFlash </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">bool</a> tinyfonts::Font::inFlash </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -382,6 +423,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>True if the blob is stored in flash (PROGMEM). </p>
 
 </div>
 </div>
@@ -395,7 +438,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint32_t</a> tinyfonts::Font::kerningCount </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint32_t</a> tinyfonts::Font::kerningCount </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -407,6 +450,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Number of kerning pairs. </p>
 
 </div>
 </div>
@@ -420,7 +465,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> tinyfonts::Font::lineGap </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> tinyfonts::Font::lineGap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -432,6 +477,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Extra pixels between lines. </p>
 
 </div>
 </div>
@@ -445,7 +492,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> tinyfonts::Font::lineHeight </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> tinyfonts::Font::lineHeight </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -457,6 +504,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Line height: ascent + descent + line gap. </p>
 
 </div>
 </div>
@@ -470,9 +519,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint16_t</a> tinyfonts::Font::u16 </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint16_t</a> tinyfonts::Font::u16 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a>&#160;</td>
           <td class="paramname"><em>offset</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -483,6 +532,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Reads a little-endian 16-bit value at offset. </p>
 
 </div>
 </div>
@@ -496,9 +547,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint32_t</a> tinyfonts::Font::u32 </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint32_t</a> tinyfonts::Font::u32 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a>&#160;</td>
           <td class="paramname"><em>offset</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -509,6 +560,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Reads a little-endian 32-bit value at offset. </p>
 
 </div>
 </div>
@@ -522,9 +575,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a> tinyfonts::Font::u8 </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a> tinyfonts::Font::u8 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a>&#160;</td>
           <td class="paramname"><em>offset</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -535,6 +588,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Reads one byte at offset, from flash or RAM. </p>
 
 </div>
 </div>
@@ -548,7 +603,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">bool</a> tinyfonts::Font::valid </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">bool</a> tinyfonts::Font::valid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -560,6 +615,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>True when the blob is non-null and starts with the magic bytes "TNF1". </p>
 
 </div>
 </div>

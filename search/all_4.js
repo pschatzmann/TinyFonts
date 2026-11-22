@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['character_20sets_0',['Character sets',['../md_docs_2converter.html#autotoc_md14',1,'']]],
-  ['clearclip_1',['clearClip',['../classtinyfonts_1_1TextRenderer.html#a0b988e9c5011a183c4b7db24b0a16228',1,'tinyfonts::TextRenderer']]],
-  ['clipping_2',['Clipping',['../md_docs_2getting-started.html#autotoc_md29',1,'']]],
-  ['cmake_3',['CMake',['../md_docs_2cmake.html',1,'']]],
-  ['cmake_20project_4',['Using TinyFonts in your CMake project',['../md_docs_2cmake.html#autotoc_md7',1,'']]],
-  ['cmake_2emd_5',['cmake.md',['../cmake_8md.html',1,'']]],
-  ['codepoint_6',['codepoint',['../structtinyfonts_1_1Glyph.html#ad9a9d562f6c3fdb578d37715f95891d2',1,'tinyfonts::Glyph']]],
-  ['config_2eh_7',['config.h',['../config_8h.html',1,'']]],
-  ['converter_8',['Font converter',['../md_docs_2converter.html',1,'']]],
-  ['converter_2emd_9',['converter.md',['../converter_8md.html',1,'']]]
+  ['fallbackcodepoint_0',['fallbackCodepoint',['../classtinyfonts_1_1Font.html#a998a034589ab78ffe511c061d8c2ee45',1,'tinyfonts::Font']]],
+  ['features_1',['Features',['../index.html#autotoc_md1',1,'']]],
+  ['findglyph_2',['findGlyph',['../namespacetinyfonts.html#a6ce48428d781e44b0d9a7784d10da101',1,'tinyfonts']]],
+  ['font_3',['font',['../classtinyfonts_1_1Font.html',1,'tinyfonts::Font'],['../classtinyfonts_1_1Font.html#aa22873671449c8e8f03e5c6e4e55cac8',1,'tinyfonts::Font::Font()'],['../classtinyfonts_1_1TinyGPUFont.html#a4360e071d958bee77e0594bcd748c1e4',1,'tinyfonts::TinyGPUFont::font()']]],
+  ['fontdisplay_4',['FontDisplay',['../classtinyfonts_1_1FontDisplay.html',1,'tinyfonts']]],
+  ['format_2eh_5',['format.h',['../format_8h.html',1,'']]]
 ];

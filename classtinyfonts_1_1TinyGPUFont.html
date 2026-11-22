@@ -81,6 +81,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>A TinyFonts font usable wherever TinyGPU expects an IFont.  
+ <a href="classtinyfonts_1_1TinyGPUFont.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="TinyGPU_8h_source.html">TinyGPU.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for tinyfonts::TinyGPUFont&lt; RGB_T &gt;:</div>
@@ -91,43 +94,57 @@ Inheritance diagram for tinyfonts::TinyGPUFont&lt; RGB_T &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad6d1344b70dd9021b2474c4712fb592c" id="r_ad6d1344b70dd9021b2474c4712fb592c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#ad6d1344b70dd9021b2474c4712fb592c">TinyGPUFont</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1Font.html">Font</a> &amp;<a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a4360e071d958bee77e0594bcd748c1e4">font</a>)</td></tr>
+<tr class="memitem:ad6d1344b70dd9021b2474c4712fb592c" id="r_ad6d1344b70dd9021b2474c4712fb592c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#ad6d1344b70dd9021b2474c4712fb592c">TinyGPUFont</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1Font.html">Font</a> &amp;<a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a4360e071d958bee77e0594bcd748c1e4">font</a>)</td></tr>
+<tr class="memdesc:ad6d1344b70dd9021b2474c4712fb592c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps a TinyFonts font. The font data is not copied.  <br /></td></tr>
 <tr class="separator:ad6d1344b70dd9021b2474c4712fb592c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4714012db27e45d04ecd38be56fb9747" id="r_a4714012db27e45d04ecd38be56fb9747"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a4714012db27e45d04ecd38be56fb9747">drawText</a> (tinygpu::ISurface&lt; <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> &gt; &amp;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">target</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int16_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">x</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int16_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">y</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">text</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">foreground</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">background</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">bool</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">opaque</a>=<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">false</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">scale</a>=1, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">spacing</a>=1, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">lineSpacing</a>=1) <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">override</a></td></tr>
+<tr class="memitem:a4714012db27e45d04ecd38be56fb9747" id="r_a4714012db27e45d04ecd38be56fb9747"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a4714012db27e45d04ecd38be56fb9747">drawText</a> (tinygpu::ISurface&lt; <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> &gt; &amp;<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">target</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int16_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">x</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int16_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">y</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">text</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">foreground</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">background</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">bool</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">opaque</a>=<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">false</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">scale</a>=1, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">spacing</a>=1, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">lineSpacing</a>=1) <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">override</a></td></tr>
+<tr class="memdesc:a4714012db27e45d04ecd38be56fb9747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws text at (x, y) as defined by tinygpu::IFont. Honours opaque, scale and the clip rectangle; spacing and lineSpacing are ignored.  <br /></td></tr>
 <tr class="separator:a4714012db27e45d04ecd38be56fb9747"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9478b2670bb7fff51b5aa563e7f953e" id="r_ab9478b2670bb7fff51b5aa563e7f953e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#ab9478b2670bb7fff51b5aa563e7f953e">measureTextWidth</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">text</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">scale</a>=1, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">spacing</a>=1) <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">override</a></td></tr>
+<tr class="memitem:ab9478b2670bb7fff51b5aa563e7f953e" id="r_ab9478b2670bb7fff51b5aa563e7f953e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#ab9478b2670bb7fff51b5aa563e7f953e">measureTextWidth</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">text</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">scale</a>=1, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">spacing</a>=1) <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">override</a></td></tr>
+<tr class="memdesc:ab9478b2670bb7fff51b5aa563e7f953e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width of the longest line in pixels, multiplied by scale.  <br /></td></tr>
 <tr class="separator:ab9478b2670bb7fff51b5aa563e7f953e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b97f885997a6bf4f2c11afbeac32ced" id="r_a1b97f885997a6bf4f2c11afbeac32ced"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a1b97f885997a6bf4f2c11afbeac32ced">measureTextHeight</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">text</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">scale</a>=1, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">lineSpacing</a>=1) <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">override</a></td></tr>
+<tr class="memitem:a1b97f885997a6bf4f2c11afbeac32ced" id="r_a1b97f885997a6bf4f2c11afbeac32ced"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a1b97f885997a6bf4f2c11afbeac32ced">measureTextHeight</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">text</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">scale</a>=1, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">lineSpacing</a>=1) <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">override</a></td></tr>
+<tr class="memdesc:a1b97f885997a6bf4f2c11afbeac32ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height of the text block in pixels, multiplied by scale.  <br /></td></tr>
 <tr class="separator:a1b97f885997a6bf4f2c11afbeac32ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affec73819f1a67b0ca3ba038097a49e7" id="r_affec73819f1a67b0ca3ba038097a49e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#affec73819f1a67b0ca3ba038097a49e7">getHeight</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">scale</a>) <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">override</a></td></tr>
+<tr class="memitem:affec73819f1a67b0ca3ba038097a49e7" id="r_affec73819f1a67b0ca3ba038097a49e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#affec73819f1a67b0ca3ba038097a49e7">getHeight</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">scale</a>) <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">override</a></td></tr>
+<tr class="memdesc:affec73819f1a67b0ca3ba038097a49e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Line height in pixels at the given scale.  <br /></td></tr>
 <tr class="separator:affec73819f1a67b0ca3ba038097a49e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a83ce31b22142d18d1aadad255820a7" id="r_a9a83ce31b22142d18d1aadad255820a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a9a83ce31b22142d18d1aadad255820a7">setProportional</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">bool</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">proportional</a>) <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">override</a></td></tr>
+<tr class="memitem:a9a83ce31b22142d18d1aadad255820a7" id="r_a9a83ce31b22142d18d1aadad255820a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a9a83ce31b22142d18d1aadad255820a7">setProportional</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">bool</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">proportional</a>) <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">override</a></td></tr>
+<tr class="memdesc:a9a83ce31b22142d18d1aadad255820a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">No-op: TinyFonts fonts are always proportional.  <br /></td></tr>
 <tr class="separator:a9a83ce31b22142d18d1aadad255820a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06e14799412f7631eda916eff85aac37" id="r_a06e14799412f7631eda916eff85aac37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a06e14799412f7631eda916eff85aac37">isProportional</a> () <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">override</a></td></tr>
+<tr class="memitem:a06e14799412f7631eda916eff85aac37" id="r_a06e14799412f7631eda916eff85aac37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a06e14799412f7631eda916eff85aac37">isProportional</a> () <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">override</a></td></tr>
+<tr class="memdesc:a06e14799412f7631eda916eff85aac37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always true.  <br /></td></tr>
 <tr class="separator:a06e14799412f7631eda916eff85aac37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a795ed0170f2c830800567161a848efd4" id="r_a795ed0170f2c830800567161a848efd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a795ed0170f2c830800567161a848efd4">drawWrapped</a> (tinygpu::ISurface&lt; <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> &gt; &amp;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">target</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int16_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">x</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int16_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">y</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">maxWidth</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">text</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">foreground</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">background</a>=<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>(), <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">bool</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">opaque</a>=<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">false</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">scale</a>=1) <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:a795ed0170f2c830800567161a848efd4" id="r_a795ed0170f2c830800567161a848efd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a795ed0170f2c830800567161a848efd4">drawWrapped</a> (tinygpu::ISurface&lt; <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> &gt; &amp;<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">target</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int16_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">x</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int16_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">y</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">maxWidth</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">text</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">foreground</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">background</a>=<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>(), <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">bool</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">opaque</a>=<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">false</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">scale</a>=1) <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:a795ed0170f2c830800567161a848efd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws text wrapped to maxWidth pixels at the given scale. Returns the drawn height in pixels. maxWidth &lt;= 0 disables wrapping.  <br /></td></tr>
 <tr class="separator:a795ed0170f2c830800567161a848efd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c3554e18afd933787758e10185cebe4" id="r_a5c3554e18afd933787758e10185cebe4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtinyfonts_1_1TextBox.html">TextBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a5c3554e18afd933787758e10185cebe4">measureWrapped</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">text</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">maxWidth</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">scale</a>=1) <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:a5c3554e18afd933787758e10185cebe4" id="r_a5c3554e18afd933787758e10185cebe4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtinyfonts_1_1TextBox.html">TextBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a5c3554e18afd933787758e10185cebe4">measureWrapped</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">text</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">maxWidth</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">scale</a>=1) <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:a5c3554e18afd933787758e10185cebe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the text when wrapped to maxWidth pixels at the given scale.  <br /></td></tr>
 <tr class="separator:a5c3554e18afd933787758e10185cebe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4360e071d958bee77e0594bcd748c1e4" id="r_a4360e071d958bee77e0594bcd748c1e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1Font.html">Font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a4360e071d958bee77e0594bcd748c1e4">font</a> () <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a></td></tr>
+<tr class="memitem:a4360e071d958bee77e0594bcd748c1e4" id="r_a4360e071d958bee77e0594bcd748c1e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1Font.html">Font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a4360e071d958bee77e0594bcd748c1e4">font</a> () <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a></td></tr>
+<tr class="memdesc:a4360e071d958bee77e0594bcd748c1e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The wrapped TinyFonts font.  <br /></td></tr>
 <tr class="separator:a4360e071d958bee77e0594bcd748c1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> = tinygpu::RGB565&gt;<br />
+class tinyfonts::TinyGPUFont&lt; RGB_T &gt;</div><p>A TinyFonts font usable wherever TinyGPU expects an IFont. </p>
+<p>Pass it to framebuffer.setFont() and use <a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a4714012db27e45d04ecd38be56fb9747" title="Draws text at (x, y) as defined by tinygpu::IFont. Honours opaque, scale and the clip rectangle; spac...">drawText()</a>. <a class="el" href="classtinyfonts_1_1TinyGPUFont.html#a795ed0170f2c830800567161a848efd4" title="Draws text wrapped to maxWidth pixels at the given scale. Returns the drawn height in pixels....">drawWrapped()</a> adds word wrap. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad6d1344b70dd9021b2474c4712fb592c" name="ad6d1344b70dd9021b2474c4712fb592c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6d1344b70dd9021b2474c4712fb592c">&#9670;&#160;</a></span>TinyGPUFont()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
+template&lt;<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> &gt;::TinyGPUFont </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> &gt;<a class="el" href="classtinyfonts_1_1TinyGPUFont.html">::TinyGPUFont</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1Font.html">Font</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1Font.html">Font</a> &amp;&#160;</td>
           <td class="paramname"><em>font</em></td><td>)</td>
           <td></td>
         </tr>
@@ -139,6 +156,8 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 </table>
 </div><div class="memdoc">
 
+<p>Wraps a TinyFonts font. The font data is not copied. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -148,69 +167,69 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
+template&lt;<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">void</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> &gt;::drawText </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">void</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> &gt;::drawText </td>
           <td>(</td>
-          <td class="paramtype">tinygpu::ISurface&lt; <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">tinygpu::ISurface&lt; <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int16_t</a>&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int16_t</a>&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *&#160;</td>
           <td class="paramname"><em>text</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>&#160;</td>
           <td class="paramname"><em>foreground</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>&#160;</td>
           <td class="paramname"><em>background</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">bool</a>&#160;</td>
-          <td class="paramname"><em>opaque</em> = <code><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">false</a></code>, </td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">bool</a>&#160;</td>
+          <td class="paramname"><em>opaque</em> = <code><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">false</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a>&#160;</td>
           <td class="paramname"><em>scale</em> = <code>1</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a>&#160;</td>
           <td class="paramname"><em>spacing</em> = <code>1</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a>&#160;</td>
           <td class="paramname"><em>lineSpacing</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
@@ -226,6 +245,8 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 </table>
 </div><div class="memdoc">
 
+<p>Draws text at (x, y) as defined by tinygpu::IFont. Honours opaque, scale and the clip rectangle; spacing and lineSpacing are ignored. </p>
+
 </div>
 </div>
 <a id="a795ed0170f2c830800567161a848efd4" name="a795ed0170f2c830800567161a848efd4"></a>
@@ -234,63 +255,63 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
+template&lt;<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> &gt;::drawWrapped </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> &gt;::drawWrapped </td>
           <td>(</td>
-          <td class="paramtype">tinygpu::ISurface&lt; <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">tinygpu::ISurface&lt; <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int16_t</a>&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int16_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int16_t</a>&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>maxWidth</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *&#160;</td>
           <td class="paramname"><em>text</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>&#160;</td>
           <td class="paramname"><em>foreground</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>&#160;</td>
-          <td class="paramname"><em>background</em> = <code><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>()</code>, </td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>&#160;</td>
+          <td class="paramname"><em>background</em> = <code><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">bool</a>&#160;</td>
-          <td class="paramname"><em>opaque</em> = <code><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">false</a></code>, </td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">bool</a>&#160;</td>
+          <td class="paramname"><em>opaque</em> = <code><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">false</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a>&#160;</td>
           <td class="paramname"><em>scale</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
@@ -306,6 +327,8 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 </table>
 </div><div class="memdoc">
 
+<p>Draws text wrapped to maxWidth pixels at the given scale. Returns the drawn height in pixels. maxWidth &lt;= 0 disables wrapping. </p>
+
 </div>
 </div>
 <a id="a4360e071d958bee77e0594bcd748c1e4" name="a4360e071d958bee77e0594bcd748c1e4"></a>
@@ -314,13 +337,13 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
+template&lt;<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1Font.html">Font</a> &amp; <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> &gt;::font </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1Font.html">Font</a> &amp; <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> &gt;::font </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -333,6 +356,8 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 </table>
 </div><div class="memdoc">
 
+<p>The wrapped TinyFonts font. </p>
+
 </div>
 </div>
 <a id="affec73819f1a67b0ca3ba038097a49e7" name="affec73819f1a67b0ca3ba038097a49e7"></a>
@@ -341,15 +366,15 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
+template&lt;<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> &gt;::getHeight </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> &gt;::getHeight </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a>&#160;</td>
           <td class="paramname"><em>scale</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -361,6 +386,8 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 </table>
 </div><div class="memdoc">
 
+<p>Line height in pixels at the given scale. </p>
+
 </div>
 </div>
 <a id="a06e14799412f7631eda916eff85aac37" name="a06e14799412f7631eda916eff85aac37"></a>
@@ -369,13 +396,13 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
+template&lt;<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">bool</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> &gt;::isProportional </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">bool</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> &gt;::isProportional </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -388,6 +415,8 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 </table>
 </div><div class="memdoc">
 
+<p>Always true. </p>
+
 </div>
 </div>
 <a id="a1b97f885997a6bf4f2c11afbeac32ced" name="a1b97f885997a6bf4f2c11afbeac32ced"></a>
@@ -396,27 +425,27 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
+template&lt;<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> &gt;::measureTextHeight </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> &gt;::measureTextHeight </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *&#160;</td>
           <td class="paramname"><em>text</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a>&#160;</td>
           <td class="paramname"><em>scale</em> = <code>1</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a>&#160;</td>
           <td class="paramname"><em>lineSpacing</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
@@ -432,6 +461,8 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 </table>
 </div><div class="memdoc">
 
+<p>Height of the text block in pixels, multiplied by scale. </p>
+
 </div>
 </div>
 <a id="ab9478b2670bb7fff51b5aa563e7f953e" name="ab9478b2670bb7fff51b5aa563e7f953e"></a>
@@ -440,27 +471,27 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
+template&lt;<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> &gt;::measureTextWidth </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">size_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> &gt;::measureTextWidth </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *&#160;</td>
           <td class="paramname"><em>text</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a>&#160;</td>
           <td class="paramname"><em>scale</em> = <code>1</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a>&#160;</td>
           <td class="paramname"><em>spacing</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
@@ -476,6 +507,8 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 </table>
 </div><div class="memdoc">
 
+<p>Width of the longest line in pixels, multiplied by scale. </p>
+
 </div>
 </div>
 <a id="a5c3554e18afd933787758e10185cebe4" name="a5c3554e18afd933787758e10185cebe4"></a>
@@ -484,27 +517,27 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
+template&lt;<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structtinyfonts_1_1TextBox.html">TextBox</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> &gt;::measureWrapped </td>
+          <td class="memname"><a class="el" href="structtinyfonts_1_1TextBox.html">TextBox</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> &gt;::measureWrapped </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *&#160;</td>
           <td class="paramname"><em>text</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>maxWidth</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a>&#160;</td>
           <td class="paramname"><em>scale</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
@@ -520,6 +553,8 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 </table>
 </div><div class="memdoc">
 
+<p>Size of the text when wrapped to maxWidth pixels at the given scale. </p>
+
 </div>
 </div>
 <a id="a9a83ce31b22142d18d1aadad255820a7" name="a9a83ce31b22142d18d1aadad255820a7"></a>
@@ -528,15 +563,15 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
+template&lt;<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">typename</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a>  = tinygpu::RGB565&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">void</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">RGB_T</a> &gt;::setProportional </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">void</a> <a class="el" href="classtinyfonts_1_1TinyGPUFont.html">tinyfonts::TinyGPUFont</a>&lt; <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">RGB_T</a> &gt;::setProportional </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">bool</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">bool</a>&#160;</td>
           <td class="paramname"><em>proportional</em></td><td>)</td>
           <td></td>
         </tr>
@@ -547,6 +582,8 @@ template&lt;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">typename<
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>No-op: TinyFonts fonts are always proportional. </p>
 
 </div>
 </div>

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['pixels_0',['Sizes are pixels',['../md_docs_2converter.html#autotoc_md17',1,'']]],
-  ['progmem_1',['PROGMEM',['../config_8h.html#a75acaba9e781937468d0911423bc0c35',1,'config.h']]],
-  ['project_2',['Using TinyFonts in your CMake project',['../md_docs_2cmake.html#autotoc_md7',1,'']]]
+  ['u16_0',['u16',['../classtinyfonts_1_1Font.html#a18b2238633d83e4f34cc4673eff2a738',1,'tinyfonts::Font']]],
+  ['u32_1',['u32',['../classtinyfonts_1_1Font.html#aa4c8637be867581e359b584888cba953',1,'tinyfonts::Font']]],
+  ['u8_2',['u8',['../classtinyfonts_1_1Font.html#ac8cfbcdc6a95e5496c6a94ba311b6671',1,'tinyfonts::Font']]],
+  ['utf8_2eh_3',['utf8.h',['../utf8_8h.html',1,'']]]
 ];

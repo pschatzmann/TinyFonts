@@ -81,24 +81,39 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Draws text from a <a class="el" href="classtinyfonts_1_1Font.html" title="Read-only view of a TinyFonts font blob in RAM or flash.">Font</a> onto a <a class="el" href="classtinyfonts_1_1FontDisplay.html" title="Output target for TextRenderer.">FontDisplay</a>.  
+ <a href="classtinyfonts_1_1TextRenderer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="render_8h_source.html">render.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aed05dd365c6cb70b68be87bd7861fc89" id="r_aed05dd365c6cb70b68be87bd7861fc89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TextRenderer.html#aed05dd365c6cb70b68be87bd7861fc89">TextRenderer</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1Font.html">Font</a> &amp;font, <a class="el" href="classtinyfonts_1_1FontDisplay.html">FontDisplay</a> &amp;<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">display</a>)</td></tr>
+<tr class="memitem:aed05dd365c6cb70b68be87bd7861fc89" id="r_aed05dd365c6cb70b68be87bd7861fc89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TextRenderer.html#aed05dd365c6cb70b68be87bd7861fc89">TextRenderer</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1Font.html">Font</a> &amp;font, <a class="el" href="classtinyfonts_1_1FontDisplay.html">FontDisplay</a> &amp;<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">display</a>)</td></tr>
+<tr class="memdesc:aed05dd365c6cb70b68be87bd7861fc89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a renderer that draws font onto display. Both must outlive the renderer.  <br /></td></tr>
 <tr class="separator:aed05dd365c6cb70b68be87bd7861fc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ee8db6e349cbf711d0666e3f48058fa" id="r_a6ee8db6e349cbf711d0666e3f48058fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TextRenderer.html#a6ee8db6e349cbf711d0666e3f48058fa">setClip</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">x0</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">y0</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">x1</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">y1</a>)</td></tr>
+<tr class="memitem:a6ee8db6e349cbf711d0666e3f48058fa" id="r_a6ee8db6e349cbf711d0666e3f48058fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TextRenderer.html#a6ee8db6e349cbf711d0666e3f48058fa">setClip</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">x0</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">y0</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">x1</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">y1</a>)</td></tr>
+<tr class="memdesc:a6ee8db6e349cbf711d0666e3f48058fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restricts drawing to the rectangle [x0, x1) x [y0, y1).  <br /></td></tr>
 <tr class="separator:a6ee8db6e349cbf711d0666e3f48058fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b988e9c5011a183c4b7db24b0a16228" id="r_a0b988e9c5011a183c4b7db24b0a16228"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TextRenderer.html#a0b988e9c5011a183c4b7db24b0a16228">clearClip</a> ()</td></tr>
+<tr class="memitem:a0b988e9c5011a183c4b7db24b0a16228" id="r_a0b988e9c5011a183c4b7db24b0a16228"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TextRenderer.html#a0b988e9c5011a183c4b7db24b0a16228">clearClip</a> ()</td></tr>
+<tr class="memdesc:a0b988e9c5011a183c4b7db24b0a16228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the clipping rectangle.  <br /></td></tr>
 <tr class="separator:a0b988e9c5011a183c4b7db24b0a16228"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a316ed2f54eaed7ad9c23beb6cd73ab7c" id="r_a316ed2f54eaed7ad9c23beb6cd73ab7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TextRenderer.html#a316ed2f54eaed7ad9c23beb6cd73ab7c">drawLine</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">x</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">y</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *begin, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">end</a>)</td></tr>
+<tr class="memitem:a316ed2f54eaed7ad9c23beb6cd73ab7c" id="r_a316ed2f54eaed7ad9c23beb6cd73ab7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TextRenderer.html#a316ed2f54eaed7ad9c23beb6cd73ab7c">drawLine</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">x</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">y</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *begin, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">end</a>)</td></tr>
+<tr class="memdesc:a316ed2f54eaed7ad9c23beb6cd73ab7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws one line of text: no wrapping, and '<br  />
+' ends the line. (x, y) is the top of the line box. Returns the advance width in pixels.  <br /></td></tr>
 <tr class="separator:a316ed2f54eaed7ad9c23beb6cd73ab7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4417317b49f3ed3847f4cb67a4fa3f6f" id="r_a4417317b49f3ed3847f4cb67a4fa3f6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtinyfonts_1_1TextBox.html">TextBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TextRenderer.html#a4417317b49f3ed3847f4cb67a4fa3f6f">drawText</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">x</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">y</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *begin, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">end</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">maxWidth</a>=0)</td></tr>
+<tr class="memitem:a4417317b49f3ed3847f4cb67a4fa3f6f" id="r_a4417317b49f3ed3847f4cb67a4fa3f6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtinyfonts_1_1TextBox.html">TextBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TextRenderer.html#a4417317b49f3ed3847f4cb67a4fa3f6f">drawText</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">x</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">y</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *begin, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">end</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">maxWidth</a>=0)</td></tr>
+<tr class="memdesc:a4417317b49f3ed3847f4cb67a4fa3f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws text from begin to end, honouring '<br  />
+' and wrapping at maxWidth (maxWidth &lt;= 0 disables wrapping). Returns the size of the drawn block.  <br /></td></tr>
 <tr class="separator:a4417317b49f3ed3847f4cb67a4fa3f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b61193cda778dc27bb18d2939fe8754" id="r_a2b61193cda778dc27bb18d2939fe8754"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtinyfonts_1_1TextBox.html">TextBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TextRenderer.html#a2b61193cda778dc27bb18d2939fe8754">drawText</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">x</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">y</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">text</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">maxWidth</a>=0)</td></tr>
+<tr class="memitem:a2b61193cda778dc27bb18d2939fe8754" id="r_a2b61193cda778dc27bb18d2939fe8754"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtinyfonts_1_1TextBox.html">TextBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1TextRenderer.html#a2b61193cda778dc27bb18d2939fe8754">drawText</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">x</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">y</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">text</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">maxWidth</a>=0)</td></tr>
+<tr class="memdesc:a2b61193cda778dc27bb18d2939fe8754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a NUL-terminated string. See the range overload for details.  <br /></td></tr>
 <tr class="separator:a2b61193cda778dc27bb18d2939fe8754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Draws text from a <a class="el" href="classtinyfonts_1_1Font.html" title="Read-only view of a TinyFonts font blob in RAM or flash.">Font</a> onto a <a class="el" href="classtinyfonts_1_1FontDisplay.html" title="Output target for TextRenderer.">FontDisplay</a>. </p>
+<p>Coordinates are in pixels. (x, y) is the top-left corner of the first line box, and the baseline lies ascent pixels below it. Supports UTF-8, kerning, '<br  />
+' line breaks, word wrap and a clipping rectangle. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aed05dd365c6cb70b68be87bd7861fc89" name="aed05dd365c6cb70b68be87bd7861fc89"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed05dd365c6cb70b68be87bd7861fc89">&#9670;&#160;</a></span>TextRenderer()</h2>
 
@@ -111,7 +126,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">tinyfonts::TextRenderer::TextRenderer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1Font.html">Font</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1Font.html">Font</a> &amp;&#160;</td>
           <td class="paramname"><em>font</em>, </td>
         </tr>
         <tr>
@@ -133,6 +148,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Creates a renderer that draws font onto display. Both must outlive the renderer. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -146,7 +163,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">void</a> tinyfonts::TextRenderer::clearClip </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">void</a> tinyfonts::TextRenderer::clearClip </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -158,6 +175,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Removes the clipping rectangle. </p>
 
 </div>
 </div>
@@ -171,27 +190,27 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> tinyfonts::TextRenderer::drawLine </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> tinyfonts::TextRenderer::drawLine </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *&#160;</td>
           <td class="paramname"><em>begin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *&#160;</td>
           <td class="paramname"><em>end</em>&#160;</td>
         </tr>
         <tr>
@@ -207,6 +226,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Draws one line of text: no wrapping, and '<br  />
+' ends the line. (x, y) is the top of the line box. Returns the advance width in pixels. </p>
+
 </div>
 </div>
 <a id="a4417317b49f3ed3847f4cb67a4fa3f6f" name="a4417317b49f3ed3847f4cb67a4fa3f6f"></a>
@@ -221,31 +243,31 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structtinyfonts_1_1TextBox.html">TextBox</a> tinyfonts::TextRenderer::drawText </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *&#160;</td>
           <td class="paramname"><em>begin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *&#160;</td>
           <td class="paramname"><em>end</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>maxWidth</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -260,6 +282,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Draws text from begin to end, honouring '<br  />
+' and wrapping at maxWidth (maxWidth &lt;= 0 disables wrapping). Returns the size of the drawn block. </p>
 
 </div>
 </div>
@@ -275,25 +300,25 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structtinyfonts_1_1TextBox.html">TextBox</a> tinyfonts::TextRenderer::drawText </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">char</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">const</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">char</a> *&#160;</td>
           <td class="paramname"><em>text</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>maxWidth</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -309,6 +334,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Draws a NUL-terminated string. See the range overload for details. </p>
+
 </div>
 </div>
 <a id="a6ee8db6e349cbf711d0666e3f48058fa" name="a6ee8db6e349cbf711d0666e3f48058fa"></a>
@@ -321,27 +348,27 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">void</a> tinyfonts::TextRenderer::setClip </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">void</a> tinyfonts::TextRenderer::setClip </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>x0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>y0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>x1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>y1</em>&#160;</td>
         </tr>
         <tr>
@@ -356,6 +383,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Restricts drawing to the rectangle [x0, x1) x [y0, y1). </p>
 
 </div>
 </div>

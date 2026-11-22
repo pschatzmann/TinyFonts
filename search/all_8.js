@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['generate_20a_20font_20header_0',['1. Generate a font header',['../md_docs_2quickstart.html#autotoc_md34',1,'']]],
-  ['getheight_1',['getHeight',['../classtinyfonts_1_1TinyGPUFont.html#affec73819f1a67b0ca3ba038097a49e7',1,'tinyfonts::TinyGPUFont']]],
-  ['getting_20started_2',['Getting started',['../md_docs_2getting-started.html',1,'']]],
-  ['getting_2dstarted_2emd_3',['getting-started.md',['../getting-started_8md.html',1,'']]],
-  ['glyph_4',['Glyph',['../structtinyfonts_1_1Glyph.html',1,'tinyfonts']]],
-  ['glyph_20table_5',['Glyph table',['../md_docs_2format.html#autotoc_md23',1,'']]],
-  ['glyphcount_6',['glyphCount',['../classtinyfonts_1_1Font.html#a6bea8666ff3f38750f9fc66d6ebfe3ae',1,'tinyfonts::Font']]],
-  ['glyphentryoffset_7',['glyphEntryOffset',['../namespacetinyfonts.html#a197fdccadf2fca8eb9a968078243165f',1,'tinyfonts']]]
+  ['kerning_0',['kerning',['../namespacetinyfonts.html#a7451de201def497eb05ec4091f909bdb',1,'tinyfonts']]],
+  ['kerningcount_1',['kerningCount',['../classtinyfonts_1_1Font.html#adebadbcb9542e3eb6a61164116b493a3',1,'tinyfonts::Font']]],
+  ['kerningentryoffset_2',['kerningEntryOffset',['../namespacetinyfonts.html#ac1a43fcc70de1c485376eb9e5db8ba8f',1,'tinyfonts']]],
+  ['kglyphentrysize_3',['kGlyphEntrySize',['../namespacetinyfonts.html#ad9067903e37f9941c79375db57efe281',1,'tinyfonts']]],
+  ['kheadersize_4',['kHeaderSize',['../namespacetinyfonts.html#a6e52e9d918c5f4867796870ebdabf107',1,'tinyfonts']]],
+  ['kkerningentrysize_5',['kKerningEntrySize',['../namespacetinyfonts.html#ae8c353c03b8e0936671a5d534925519a',1,'tinyfonts']]],
+  ['kreplacementchar_6',['kReplacementChar',['../namespacetinyfonts.html#a8c7ae470e855bc98642779e62924f810',1,'tinyfonts']]]
 ];

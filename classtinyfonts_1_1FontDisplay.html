@@ -81,6 +81,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Output target for <a class="el" href="classtinyfonts_1_1TextRenderer.html" title="Draws text from a Font onto a FontDisplay.">TextRenderer</a>.  
+ <a href="classtinyfonts_1_1FontDisplay.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="render_8h_source.html">render.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for tinyfonts::FontDisplay:</div>
@@ -88,19 +91,23 @@ Inheritance diagram for tinyfonts::FontDisplay:</div>
  <div class="center">
   <img src="classtinyfonts_1_1FontDisplay.png" usemap="#tinyfonts::FontDisplay_map" alt=""/>
   <map id="tinyfonts::FontDisplay_map" name="tinyfonts::FontDisplay_map">
-<area href="classtinyfonts_1_1LambdaDisplay.html" alt="tinyfonts::LambdaDisplay&lt; Fn &gt;" shape="rect" coords="0,56,219,80"/>
-<area href="classtinyfonts_1_1TinyGPUDisplay.html" alt="tinyfonts::TinyGPUDisplay&lt; RGB_T &gt;" shape="rect" coords="229,56,448,80"/>
+<area href="classtinyfonts_1_1LambdaDisplay.html" title="FontDisplay that forwards drawPixel() to a callable." alt="tinyfonts::LambdaDisplay&lt; Fn &gt;" shape="rect" coords="0,56,219,80"/>
+<area href="classtinyfonts_1_1TinyGPUDisplay.html" title="FontDisplay that writes TinyFonts coverage into a TinyGPU surface." alt="tinyfonts::TinyGPUDisplay&lt; RGB_T &gt;" shape="rect" coords="229,56,448,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaed89d5a126fcf1fb9df5c2694655971" id="r_aaed89d5a126fcf1fb9df5c2694655971"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">virtual</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1FontDisplay.html#aaed89d5a126fcf1fb9df5c2694655971">~FontDisplay</a> ()</td></tr>
+<tr class="memitem:aaed89d5a126fcf1fb9df5c2694655971" id="r_aaed89d5a126fcf1fb9df5c2694655971"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">virtual</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1FontDisplay.html#aaed89d5a126fcf1fb9df5c2694655971">~FontDisplay</a> ()</td></tr>
 <tr class="separator:aaed89d5a126fcf1fb9df5c2694655971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac22ff96a9e28de205bc7e13cb9b82197" id="r_ac22ff96a9e28de205bc7e13cb9b82197"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">virtual</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1FontDisplay.html#ac22ff96a9e28de205bc7e13cb9b82197">drawPixel</a> (<a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">x</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">y</a>, <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">coverage</a>)=0</td></tr>
+<tr class="memitem:ac22ff96a9e28de205bc7e13cb9b82197" id="r_ac22ff96a9e28de205bc7e13cb9b82197"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">virtual</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtinyfonts_1_1FontDisplay.html#ac22ff96a9e28de205bc7e13cb9b82197">drawPixel</a> (<a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">x</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">y</a>, <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">coverage</a>)=0</td></tr>
+<tr class="memdesc:ac22ff96a9e28de205bc7e13cb9b82197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives one pixel. coverage is 0 (no ink) to 255 (full ink).  <br /></td></tr>
 <tr class="separator:ac22ff96a9e28de205bc7e13cb9b82197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Output target for <a class="el" href="classtinyfonts_1_1TextRenderer.html" title="Draws text from a Font onto a FontDisplay.">TextRenderer</a>. </p>
+<p>Implement <a class="el" href="classtinyfonts_1_1FontDisplay.html#ac22ff96a9e28de205bc7e13cb9b82197" title="Receives one pixel. coverage is 0 (no ink) to 255 (full ink).">drawPixel()</a> to write anti-aliased pixels to a display, framebuffer or graphics library. The coverage is 0 (no ink) to 255 (full ink); blend it with the background yourself. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aaed89d5a126fcf1fb9df5c2694655971" name="aaed89d5a126fcf1fb9df5c2694655971"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaed89d5a126fcf1fb9df5c2694655971">&#9670;&#160;</a></span>~FontDisplay()</h2>
 
@@ -111,7 +118,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">virtual</a> tinyfonts::FontDisplay::~FontDisplay </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">virtual</a> tinyfonts::FontDisplay::~FontDisplay </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -137,21 +144,21 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">virtual</a> <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">void</a> tinyfonts::FontDisplay::drawPixel </td>
+          <td class="memname"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">virtual</a> <a class="el" href="classtinyfonts_1_1LambdaDisplay.html">void</a> tinyfonts::FontDisplay::drawPixel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">int</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">int</a>&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html">uint8_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classtinyfonts_1_1LambdaDisplay.html">uint8_t</a>&#160;</td>
           <td class="paramname"><em>coverage</em>&#160;</td>
         </tr>
         <tr>
@@ -166,6 +173,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Receives one pixel. coverage is 0 (no ink) to 255 (full ink). </p>
 
 <p>Implemented in <a class="el" href="classtinyfonts_1_1TinyGPUDisplay.html#aeedaaedfca729b633f61c206e16ce059">tinyfonts::TinyGPUDisplay&lt; RGB_T &gt;</a>, and <a class="el" href="classtinyfonts_1_1LambdaDisplay.html#a59892b265cfc0d41d9b92a58cbd4855f">tinyfonts::LambdaDisplay&lt; Fn &gt;</a>.</p>
 

@@ -1,14 +1,8 @@
 var searchData=
 [
-  ['i16_0',['i16',['../classtinyfonts_1_1Font.html#a220dfd4ea2516dc469fce8dbb07b82b2',1,'tinyfonts::Font']]],
-  ['i8_1',['i8',['../classtinyfonts_1_1Font.html#a1ebc3dfb43204373d65fcebea2abaaef',1,'tinyfonts::Font']]],
-  ['in_20flash_2',['Fonts in flash',['../md_docs_2getting-started.html#autotoc_md31',1,'']]],
-  ['in_20your_20cmake_20project_3',['Using TinyFonts in your CMake project',['../md_docs_2cmake.html#autotoc_md7',1,'']]],
-  ['inflash_4',['inFlash',['../classtinyfonts_1_1Font.html#a06d91c63066b71342dbe8f0c13f987bd',1,'tinyfonts::Font']]],
-  ['ino_20tt_5',['Example: &lt;tt&gt;examples/tinygpu/tinygpu.ino&lt;/tt&gt;',['../md_docs_2tinygpu.html#autotoc_md38',1,'']]],
-  ['installation_6',['Installation',['../index.html#autotoc_md2',1,'']]],
-  ['installing_7',['Installing',['../md_docs_2cmake.html#autotoc_md9',1,'']]],
-  ['integration_3a_20tt_20tinyfonts_20integrations_20tinygpu_20h_20tt_8',['Integration: &lt;tt&gt;TinyFonts/Integrations/TinyGPU.h&lt;/tt&gt;',['../md_docs_2tinygpu.html#autotoc_md39',1,'']]],
-  ['integrations_20tinygpu_20h_20tt_9',['Integration: &lt;tt&gt;TinyFonts/Integrations/TinyGPU.h&lt;/tt&gt;',['../md_docs_2tinygpu.html#autotoc_md39',1,'']]],
-  ['isproportional_10',['isProportional',['../classtinyfonts_1_1TinyGPUFont.html#a06e14799412f7631eda916eff85aac37',1,'tinyfonts::TinyGPUFont']]]
+  ['makedisplay_0',['makeDisplay',['../namespacetinyfonts.html#a3d7462bbb69cdd8dbbf03c8d1d14eb12',1,'tinyfonts']]],
+  ['measuretext_1',['measureText',['../namespacetinyfonts.html#a11796046d971b45739b842573758a3f6',1,'tinyfonts']]],
+  ['measuretextheight_2',['measureTextHeight',['../classtinyfonts_1_1TinyGPUFont.html#a1b97f885997a6bf4f2c11afbeac32ced',1,'tinyfonts::TinyGPUFont']]],
+  ['measuretextwidth_3',['measureTextWidth',['../classtinyfonts_1_1TinyGPUFont.html#ab9478b2670bb7fff51b5aa563e7f953e',1,'tinyfonts::TinyGPUFont']]],
+  ['measurewrapped_4',['measureWrapped',['../classtinyfonts_1_1TinyGPUFont.html#a5c3554e18afd933787758e10185cebe4',1,'tinyfonts::TinyGPUFont']]]
 ];
