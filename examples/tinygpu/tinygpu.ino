@@ -3,7 +3,7 @@
  * @brief TinyFonts used through TinyGPU's own font API - the same source runs
  * on an ESP32 display board and on the SDL2 desktop backend.
  *
- * Each generated TinyFonts font is wrapped in a tinyfonts::TinyGPUFont, which
+ * Each generated TinyFonts font is wrapped in a TinyGPUFont, which
  * implements TinyGPU's IFont interface. After setFont(), the framebuffer's
  * drawText() renders TinyFonts text (with alpha blending and clipping), just
  * like TinyGPU's own bitmap fonts. drawWrapped() adds word wrapping.
@@ -24,7 +24,7 @@
 #include <TinyFonts/Integrations/TinyGPU.h>
 
 // All bundled fonts (Lato, Arial- and Helvetica-compatible). Each one is a
-// tinyfonts::Font object named after its file, e.g. Lato16 or Arial16.
+// Font object named after its file, e.g. Lato16 or Arial16.
 #include <TinyFonts/Fonts/Fonts.h>
 
 #ifdef ESP32
@@ -37,12 +37,12 @@ FrameBuffer<RGB565> framebuffer(board.width(), board.height(), FontRGB565);
 
 // One TinyGPU font object per TinyFonts font. setFont() keeps a reference, so
 // these must outlive the framebuffer's use of them (globals do).
-tinyfonts::TinyGPUFont<RGB565> title(tinyfonts::Lato32);
-tinyfonts::TinyGPUFont<RGB565> body(tinyfonts::Lato16);
-tinyfonts::TinyGPUFont<RGB565> small10(tinyfonts::Lato10);
-tinyfonts::TinyGPUFont<RGB565> small8(tinyfonts::Lato8);
-tinyfonts::TinyGPUFont<RGB565> arial16(tinyfonts::Arial16);
-tinyfonts::TinyGPUFont<RGB565> helvetica16(tinyfonts::Helvetica16);
+TinyGPUFont<RGB565> title(Lato32);
+TinyGPUFont<RGB565> body(Lato16);
+TinyGPUFont<RGB565> small10(Lato10);
+TinyGPUFont<RGB565> small8(Lato8);
+TinyGPUFont<RGB565> arial16(Arial16);
+TinyGPUFont<RGB565> helvetica16(Helvetica16);
 
 const char* kHeading = "TinyFonts";
 // UTF-8 text: multi-byte characters (ü, é, ï, €) come from the Lato16 font,
@@ -99,7 +99,7 @@ void setup() {
   movingSpan = width - 16 - static_cast<int>(textWidth);
   if (movingSpan < 0) movingSpan = 0;
 
-  const tinyfonts::TextBox box = body.measureWrapped(kParagraph, width - 16);
+  const TextBox box = body.measureWrapped(kParagraph, width - 16);
   Serial.print("paragraph lines: ");
   Serial.println(box.lines);
 }

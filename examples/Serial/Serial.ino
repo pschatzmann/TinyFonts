@@ -15,7 +15,7 @@ constexpr int kHeight = 16;
 // Coverage canvas: 0 = background, 255 = fully covered.
 static uint8_t canvas[kHeight][kWidth];
 
-class CanvasDisplay : public tinyfonts::FontDisplay {
+class CanvasDisplay : public FontDisplay {
 public:
   void drawPixel(int x, int y, uint8_t coverage) override {
     if (x < 0 || y < 0 || x >= kWidth || y >= kHeight) return;
@@ -25,7 +25,7 @@ public:
 };
 
 CanvasDisplay display;
-tinyfonts::TextRenderer text(tinyfonts::Lato12, display);
+TextRenderer text(Lato12, display);
 
 void printCanvas() {
   static const char shades[] = " .:-=+*#%@";
@@ -44,7 +44,7 @@ void setup() {
 
   memset(canvas, 0, sizeof(canvas));
   const char* message = "AVATAR Hello!";
-  tinyfonts::TextBox box = text.drawText(0, 0, message);
+  TextBox box = text.drawText(0, 0, message);
   printCanvas();
 
   Serial.print("Text width: ");
